@@ -28,7 +28,7 @@ function App() {
   const { user } = state;
 
 const wsLink = new WebSocketLink({
-  uri: `${process.env.REACT_APP_SERVER_URL.replace('http', 'ws')}/graphql`,
+  uri: `${process.env.REACT_APP_SERVER_URL.replace('https', 'ws').replace('http', 'ws')}/graphql`,
   options: {
     reconnect: true,
     connectionParams: {
