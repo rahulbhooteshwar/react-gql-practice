@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/react-gql-practice/static/css/main.3587ec3f.chunk.css",
-    "main.js": "/react-gql-practice/static/js/main.aefb00eb.chunk.js",
-    "main.js.map": "/react-gql-practice/static/js/main.aefb00eb.chunk.js.map",
+    "main.js": "/react-gql-practice/static/js/main.3b21837f.chunk.js",
+    "main.js.map": "/react-gql-practice/static/js/main.3b21837f.chunk.js.map",
     "runtime-main.js": "/react-gql-practice/static/js/runtime-main.43201295.js",
     "runtime-main.js.map": "/react-gql-practice/static/js/runtime-main.43201295.js.map",
     "static/css/2.d34346ea.chunk.css": "/react-gql-practice/static/css/2.d34346ea.chunk.css",
     "static/js/2.5bcaae90.chunk.js": "/react-gql-practice/static/js/2.5bcaae90.chunk.js",
     "static/js/2.5bcaae90.chunk.js.map": "/react-gql-practice/static/js/2.5bcaae90.chunk.js.map",
     "index.html": "/react-gql-practice/index.html",
-    "precache-manifest.fdd0109745fd15622e1779c0429aaa24.js": "/react-gql-practice/precache-manifest.fdd0109745fd15622e1779c0429aaa24.js",
+    "precache-manifest.38ef6f0888bca2a4c547ce90905b7640.js": "/react-gql-practice/precache-manifest.38ef6f0888bca2a4c547ce90905b7640.js",
     "service-worker.js": "/react-gql-practice/service-worker.js",
     "static/css/2.d34346ea.chunk.css.map": "/react-gql-practice/static/css/2.d34346ea.chunk.css.map",
     "static/css/main.3587ec3f.chunk.css.map": "/react-gql-practice/static/css/main.3587ec3f.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.d34346ea.chunk.css",
     "static/js/2.5bcaae90.chunk.js",
     "static/css/main.3587ec3f.chunk.css",
-    "static/js/main.aefb00eb.chunk.js"
+    "static/js/main.3b21837f.chunk.js"
   ]
 }

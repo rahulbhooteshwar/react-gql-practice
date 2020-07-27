@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "10de9d96c28de15dc327cb43ab4742cb",
+    "revision": "e081b046c5a77f7d9b65a31c007f400a",
     "url": "/react-gql-practice/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-gql-practice/static/css/2.d34346ea.chunk.css"
   },
   {
-    "revision": "312b8ac83ce7fb962338",
+    "revision": "7c6fba1c782479332cb9",
     "url": "/react-gql-practice/static/css/main.3587ec3f.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-gql-practice/static/js/2.5bcaae90.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "312b8ac83ce7fb962338",
-    "url": "/react-gql-practice/static/js/main.aefb00eb.chunk.js"
+    "revision": "7c6fba1c782479332cb9",
+    "url": "/react-gql-practice/static/js/main.3b21837f.chunk.js"
   },
   {
     "revision": "cba7911b597022c57123",
