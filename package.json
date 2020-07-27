@@ -23,7 +23,7 @@
     "subscriptions-transport-ws": "^0.9.17"
   },
   "scripts": {
-    "predeploy": "yarn run build",
+    "predeploy": "yarn run build && cp ./build/index.html ./build/404.html",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
