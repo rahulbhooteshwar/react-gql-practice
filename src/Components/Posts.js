@@ -8,7 +8,7 @@ const Posts = ({ posts, showAuthor = true, colSize = 3, deletePostHandler, edita
         return <div className={`col-md-${colSize} p-2`} key={`post-${post._id}`}>
           <div className="card p-2" style={{ height: '100%' }}>
             <div className="card-body">
-              <Link to={`/posts/${post._id}`}>
+              <Link to={process.env.PUBLIC_URL + `/posts/${post._id}`}>
                 <img className="img-card-top" src={post.image.url} alt="" style={{ height: '100px', width: '300px' }} />
                 <h5 className="card-title">
                   {post.title}
@@ -20,7 +20,7 @@ const Posts = ({ posts, showAuthor = true, colSize = 3, deletePostHandler, edita
                   showAuthor
                     ? <div>
 
-                      <Link className="text-secondary strong" to={`/users/${post.postedBy.username}`}>
+                      <Link className="text-secondary strong" to={process.env.PUBLIC_URL + `/users/${post.postedBy.username}`}>
                         Author: {post.postedBy.name ? post.postedBy.name : post.postedBy.username}
                       </Link>
                     </div>
@@ -36,7 +36,7 @@ const Posts = ({ posts, showAuthor = true, colSize = 3, deletePostHandler, edita
                 }
                 {
                   editable
-                    ? <Link to={`/edit-post/${post._id}`} className="float-right btn btn-raised btn-info">Edit</Link>
+                    ? <Link to={process.env.PUBLIC_URL + `/edit-post/${post._id}`} className="float-right btn btn-raised btn-info">Edit</Link>
                     : ''
                 }
               </div>

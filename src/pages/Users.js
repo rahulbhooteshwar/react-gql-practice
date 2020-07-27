@@ -21,7 +21,7 @@ const Users = () => {
       {
         data && data.allUsers ? data.allUsers.map(user => {
           return <div className="col-md-2" key={`user-` + user._id}>
-            <Link to={`/users/${user.username}`}>
+            <Link to={process.env.PUBLIC_URL + `/users/${user.username}`}>
               <UserCard user={user} ></UserCard>
             </Link>
           </div>

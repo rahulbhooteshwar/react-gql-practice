@@ -27,8 +27,8 @@ function App() {
   const { state } = useContext(AuthContext);
   const { user } = state;
 
-const wsLink = new WebSocketLink({
-  uri: `${process.env.REACT_APP_SERVER_URL.replace('https', 'ws').replace('http', 'ws')}/graphql`,
+  const wsLink = new WebSocketLink({
+  uri: `${process.env.REACT_APP_SERVER_WS_URL}/graphql`,
   options: {
     reconnect: true,
     connectionParams: {
@@ -74,43 +74,43 @@ const wsLink = new WebSocketLink({
         <ToastContainer />
         <div className="container-fluid p-5">
           <Switch>
-            <PublicRoute exact path="/login">
+            <PublicRoute exact path={process.env.PUBLIC_URL + "/login"}>
               <Login></Login>
             </PublicRoute>
-            <PublicRoute exact path="/register">
+            <PublicRoute exact path={process.env.PUBLIC_URL + "/register"}>
               <Register></Register>
             </PublicRoute>
-            <PublicRoute exact path="/complete-register">
+            <PublicRoute exact path={process.env.PUBLIC_URL + "/complete-register"}>
               <CompleteRegistration />
             </PublicRoute>
-            <PublicRoute exact path="/forgot-password">
+            <PublicRoute exact path={process.env.PUBLIC_URL + "/forgot-password"}>
               <ForgotPassword/>
             </PublicRoute>
-            <PrivateRoute path="/dashboard">
+            <PrivateRoute path={process.env.PUBLIC_URL + "/dashboard"}>
               <Dashboard/>
             </PrivateRoute>
-            <PrivateRoute path="/create-post">
+            <PrivateRoute path={process.env.PUBLIC_URL + "/create-post"}>
               <CreatePost/>
             </PrivateRoute>
-            <PrivateRoute path="/edit-post/:_id">
+            <PrivateRoute path={process.env.PUBLIC_URL + "/edit-post/:_id"}>
               <EditPost/>
             </PrivateRoute>
-            <Route path="/users/:username">
+            <Route path={process.env.PUBLIC_URL + "/users/:username"}>
               <SingleUser/>
             </Route>
-            <Route path="/users">
+            <Route path={process.env.PUBLIC_URL + "/users"}>
               <Users/>
             </Route>
-            <Route path="/posts/:_id">
+            <Route path={process.env.PUBLIC_URL + "/posts/:_id"}>
               <ViewPost/>
             </Route>
-            <Route path="/search/:keyword">
+            <Route path={process.env.PUBLIC_URL + "/search/:keyword"}>
               <SearchResults/>
             </Route>
-            <Route path="/token">
+            <Route path={process.env.PUBLIC_URL + "/token"}>
               {state && state.user && state.user.token}
             </Route>
-            <Route path="/">
+            <Route path={process.env.PUBLIC_URL + "/"}>
               <Home></Home>
             </Route>
           </Switch>

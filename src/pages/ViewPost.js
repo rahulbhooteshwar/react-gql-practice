@@ -25,7 +25,7 @@ const ViewPost = () => {
           : <div className="jumbotron">
             <img style={{ width: '800px' }} src={data.singlePost.image.url} alt="" />
             <h1 className="m-auto display-4">{data.singlePost.title}</h1>
-            <p className="lead">By: <Link to={`/users/${data.singlePost.postedBy.username}`}>{data.singlePost.postedBy.name}</Link></p>
+            <p className="lead">By: <Link to={process.env.PUBLIC_URL + `/users/${data.singlePost.postedBy.username}`}>{data.singlePost.postedBy.name}</Link></p>
             <hr className="my-4" />
             <p className="lead">
               {data.singlePost.content}
