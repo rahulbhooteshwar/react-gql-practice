@@ -45,7 +45,7 @@ const UserPosts = () => {
     <div>
       <div className="row">
         <div className="col">
-          <Link to={process.env.PUBLIC_URL + "/create-post"} className="btn btn-raised btn-success-outline float-right">Create New Post</Link>
+          <Link to={"/create-post"} className="btn btn-raised btn-success-outline float-right">Create New Post</Link>
         </div>
       </div>
       {

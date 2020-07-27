@@ -74,43 +74,43 @@ function App() {
         <ToastContainer />
         <div className="container-fluid p-5">
           <Switch>
-            <PublicRoute exact path={process.env.PUBLIC_URL + "/login"}>
+            <PublicRoute exact path={"/login"}>
               <Login></Login>
             </PublicRoute>
-            <PublicRoute exact path={process.env.PUBLIC_URL + "/register"}>
+            <PublicRoute exact path={"/register"}>
               <Register></Register>
             </PublicRoute>
-            <PublicRoute exact path={process.env.PUBLIC_URL + "/complete-register"}>
+            <PublicRoute exact path={"/complete-register"}>
               <CompleteRegistration />
             </PublicRoute>
-            <PublicRoute exact path={process.env.PUBLIC_URL + "/forgot-password"}>
+            <PublicRoute exact path={"/forgot-password"}>
               <ForgotPassword/>
             </PublicRoute>
-            <PrivateRoute path={process.env.PUBLIC_URL + "/dashboard"}>
+            <PrivateRoute path={"/dashboard"}>
               <Dashboard/>
             </PrivateRoute>
-            <PrivateRoute path={process.env.PUBLIC_URL + "/create-post"}>
+            <PrivateRoute path={"/create-post"}>
               <CreatePost/>
             </PrivateRoute>
-            <PrivateRoute path={process.env.PUBLIC_URL + "/edit-post/:_id"}>
+            <PrivateRoute path={"/edit-post/:_id"}>
               <EditPost/>
             </PrivateRoute>
-            <Route path={process.env.PUBLIC_URL + "/users/:username"}>
+            <Route path={"/users/:username"}>
               <SingleUser/>
             </Route>
-            <Route path={process.env.PUBLIC_URL + "/users"}>
+            <Route path={"/users"}>
               <Users/>
             </Route>
-            <Route path={process.env.PUBLIC_URL + "/posts/:_id"}>
+            <Route path={"/posts/:_id"}>
               <ViewPost/>
             </Route>
-            <Route path={process.env.PUBLIC_URL + "/search/:keyword"}>
+            <Route path={"/search/:keyword"}>
               <SearchResults/>
             </Route>
-            <Route path={process.env.PUBLIC_URL + "/token"}>
+            <Route path={"/token"}>
               {state && state.user && state.user.token}
             </Route>
-            <Route path={process.env.PUBLIC_URL + "/"}>
+            <Route path={"/"}>
               <Home></Home>
             </Route>
           </Switch>

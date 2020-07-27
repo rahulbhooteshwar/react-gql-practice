@@ -63,7 +63,7 @@ const Login = () => {
           </button>
           <div>Or</div>
           <AuthForm {...{ email, password, setEmail, setPassword, loading, handleSubmit, submitLabel: 'Login using email & password', showPassword: true }} >
-            <Link to={process.env.PUBLIC_URL + "/forgot-password"}>
+            <Link to={"/forgot-password"}>
               <button className="btn btn-outline-secondary">Forgot Password</button>
             </Link>
           </AuthForm>
