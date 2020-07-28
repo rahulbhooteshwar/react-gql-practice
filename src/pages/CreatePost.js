@@ -16,7 +16,7 @@ const CreatePost = () => {
 
   const [createPost] = useMutation(POST_CREATE, {
     update: (cache) => {
-      //cache.reset()
+      cache.reset()
     },
     // refetchQueries: [
     //   { query: GET_POSTS_QUERY },
