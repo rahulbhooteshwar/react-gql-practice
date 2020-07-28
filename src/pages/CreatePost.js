@@ -53,6 +53,7 @@ const CreatePost = () => {
       setLoading(false)
       setTitle('')
       setContent('')
+      setImage(null)
       //history.push('/dashboard/user-posts')
     } catch (error) {
       toast.error(error.message)

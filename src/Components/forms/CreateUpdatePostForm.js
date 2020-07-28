@@ -94,7 +94,7 @@ const CreateUpdatePostForm = ({ title, content, image, setTitle, setContent, set
             onChange={e => setContent(e.target.value)}
           />
         </div>
-        <button disabled={!title || !content || loading} className="btn btn-raised btn-success">Submit</button>
+        <button disabled={!title || !content || loading || processingImage} className="btn btn-raised btn-success">Submit</button>
       </form>
     </Fragment>
   )
