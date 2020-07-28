@@ -21,7 +21,11 @@ const EditPost = () => {
       _id: _id
     }
   })
-  const [updatePost] = useMutation(UPDATE_POST)
+  const [updatePost] = useMutation(UPDATE_POST, {
+    update: (cache) => {
+      cache.reset()
+    }
+  })
   useEffect(() => {
     if (error) {
       toast.error(error.message)
@@ -48,7 +52,7 @@ const EditPost = () => {
             image: omitDeep(image, ['__typename'])
           }
         },
-        refetchQueries: [{ query: GET_CURRENT_USER_POSTS_QUERY }, { query: GET_POSTS_QUERY }]
+        // refetchQueries: [{ query: GET_CURRENT_USER_POSTS_QUERY }, { query: GET_POSTS_QUERY }]
       })
       toast.success('Updated Post')
       setSubmitting(false)
