@@ -12,7 +12,7 @@
     "firebase": "^7.16.1",
     "gh-pages": "^3.1.0",
     "graphql": "^15.3.0",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "omit-deep-lodash": "^1.1.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
